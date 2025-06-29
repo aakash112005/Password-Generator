@@ -260,3 +260,13 @@ button {
 
 /* Generate Button Ends 
  */
+.copy-message {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.copy-message.active {
+  opacity: 1;
+  color: blue;
+}
+
