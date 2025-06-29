@@ -107,7 +107,7 @@ let passwordDisplay = document.querySelector("input[passwordDisplay]");
 async function copyContent() {
     try {
         await navigator.clipboard.writeText(passwordDisplay.value);
-
+        copyMessage.style.color = "blue";
         copyMessage.innerText = "Copied"
     }
     catch (e) {
